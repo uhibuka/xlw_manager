@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe9b57c-df33-40c1-b11c-2a676092093b" name="Changes" comment="springboot项目正常启动">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/xlw_manager_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0fe9b57c-df33-40c1-b11c-2a676092093b" name="Changes" comment="springboot项目正常启动" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712206061759</updated>
-      <workItem from="1712206062759" duration="921000" />
+      <workItem from="1712206062759" duration="1225000" />
     </task>
     <task id="LOCAL-00001" summary="初始项目构建">
       <option name="closed" value="true" />
@@ -126,11 +116,38 @@
       <option name="project" value="LOCAL" />
       <updated>1712206972195</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="springboot项目正常启动">
+      <option name="closed" value="true" />
+      <created>1712207032913</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712207032913</updated>
+    </task>
+    <task id="LOCAL-00004" summary="springboot项目正常启动">
+      <option name="closed" value="true" />
+      <created>1712207235000</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712207235000</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始项目构建" />
