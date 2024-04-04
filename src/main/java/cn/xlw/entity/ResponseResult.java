@@ -1,4 +1,4 @@
-package cn.xlw.domain;
+package cn.xlw.entity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;

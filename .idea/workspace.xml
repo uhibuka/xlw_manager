@@ -4,14 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe9b57c-df33-40c1-b11c-2a676092093b" name="Changes" comment="与数据库建立连接开发完成">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/domain/ResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/util/FastJsonRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/util/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/util/RedisCache.java" afterDir="false" />
+    <list default="true" id="0fe9b57c-df33-40c1-b11c-2a676092093b" name="Changes" comment="引入SpringSecurity所需工具类">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/entity/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/util/WebUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xlw/domain/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/entity/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xlw/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xlw/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xlw/util/RedisCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xlw/util/RedisCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xlw/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xlw/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xlw/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xlw/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xlw/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xlw/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xlw/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xlw/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xlw/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xlw/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +80,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/code/xlw-manager/xlw_manager/src/main/resources/Application.properties",
+    "last_opened_file_path": "E:/code/springSecurity",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,10 +88,19 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.31021556",
-    "settings.editor.selected.configurable": "application.passwordSafe",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.xlw.service" />
+      <recent name="cn.xlw.entity" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="xlw_manager" />
@@ -107,7 +129,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712206061759</updated>
-      <workItem from="1712206062759" duration="6392000" />
+      <workItem from="1712206062759" duration="13772000" />
     </task>
     <task id="LOCAL-00001" summary="初始项目构建">
       <option name="closed" value="true" />
@@ -157,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712210939620</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="引入SpringSecurity所需工具类">
+      <option name="closed" value="true" />
+      <created>1712213188581</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712213188581</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +208,7 @@
     <MESSAGE value="初始项目构建" />
     <MESSAGE value="springboot项目正常启动" />
     <MESSAGE value="与数据库建立连接开发完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="与数据库建立连接开发完成" />
+    <MESSAGE value="引入SpringSecurity所需工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入SpringSecurity所需工具类" />
   </component>
 </project>
